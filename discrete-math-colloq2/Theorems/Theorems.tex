@@ -25,6 +25,25 @@ ${\displaystyle \mathbf {1} _{\bigcup _{i}A_{i}}=\sum _{i}\mathbf {1} _{A_{i}}-\
     \end{proof}
     
     \sep
+    \section{Теорема 2}
+        \begin{theorem}
+            Условную вероятность $Pr[A|B]$ можно вычислить по формуле Байеса: 
+                $$ Pr[A|B] = \frac{Pr[B|A]}{Pr[B]} \cdot Pr[A]$$
+        \end{theorem}
+
+        \begin{proof}
+            $$ Pr[A|B] = \frac{Pr[B|A]}{Pr[B]} \cdot Pr[A] $$
+                $$\Updownarrow$$
+            $$ Pr[A|B] \cdot Pr[B] = Pr[B|A] \cdot Pr[A] $$
+                $$\Updownarrow$$
+            $$ \frac{Pr[A\cap B]}{Pr[B]} \cdot Pr[B] = \frac{Pr[B\cap A}{Pr[A]} \cdot Pr[A] $$
+                $$\Updownarrow$$
+            $$Pr[A\cap B] = Pr[B\cap A]$$
+
+            Т.к. $A\cap B = B\cap A$, то последнее равенство верно, а значит верна формула Байеса. 
+        \end{proof}
+
+    \sep
     \section {Теорема 3}
     \begin{theorem}
    Условной вероятностью события A при условии события B называется
